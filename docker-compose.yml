@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  android:
+    image: stratuscube/react-native-android:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: react-native-android
+    ports:
+      - '8081:8081'
